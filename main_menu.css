@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #edf6f9;
+  font-family: 'Poppins', sans-serif;
+  min-width: 390px;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  width: 100%;
+  margin: auto;
+  background-color: #f0f2f5;
+  border-bottom: 1px solid #d0d0d3;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #009879;
+  font-weight: 700;
+}
+
+.has-account {
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+.nickname {
+  color: #1877f2;
+  font-weight: 700;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  min-height: 60vh;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  height: 100%;
+}
+
+.menu-logo {
+  margin: auto;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.menu-btn {
+  display:block;
+  text-align: center;
+  background-color: #009879;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  width: 160%;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 1.1rem;
+  transition: background-color 200ms;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 1);
+}
+
+.menu-btn:hover {
+  background-color: #0baa34;
+  cursor:pointer;
+}
+
+footer {
+  margin:auto;
+}
+
+i {
+  display: block;
+  margin: auto;
+  font-style: normal;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  margin-top: 1rem;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media (min-width: 850px){
+  
+  .wrapper{
+    flex-direction: row;
+    justify-content:  space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .main-menu{
+    width: 100%;
+  }
+
+  .menu-btn {
+    padding: 2rem;
+  }
+
+  .footer-content{
+    margin-top: 3rem;
+  }
+
+  i{
+    display:inline-block;
+  }
+}
+
+
+
