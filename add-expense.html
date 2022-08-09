@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-height-width, initial-scale=1.0">
+
+  <title>Add expense</title>
+
+  <link rel="stylesheet" href="add_expense.css">
+  <link rel="stylesheet" href="css/fontello.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">E-WALLET</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Main Menu</a></li>
+        <li><a href="#">Add income</a></li>
+        <li><a href="#">Add expense</a></li>
+        <li><a href="#">View balance</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+    <!--<div class="logout"> <a href="#">Logout</a></div> !-->
+  </nav>
+
+  <main>
+    <div class="wrapper">
+      <div class="title">Add expense</div>
+      <form action="#">
+        <label for="amount">Amount</label>
+        <input type="number" id="amount">
+        <label for="date">Date</label>
+        <input type="date" id="date">
+        <label for="payment-method">Payment Method</label>
+        <select name="payment-method" id="payment-method">
+          <option value="cash">Cash</option>
+          <option value="debet">Debet card</option>
+          <option value="credit">Credit card</option>
+        </select>
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="food">Food</option>
+          <option value="apartment">Apartment</option>
+          <option value="transport">Transport</option>
+          <option value="Telecomunication">Telecomunication</option>
+          <option value="health-care">Health Care</option>
+          <option value="clothes">Clothes</option>
+          <option value="hygiene">Hygiene</option>
+          <option value="kids">Kids</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="trip">Trip</option>
+          <option value="courses">Courses</option>
+          <option value="books">Books</option>
+          <option value="savings">Savings</option>
+          <option value="retirement">Retirement</option>
+          <option value="debt">Debts</option>
+          <option value="donation">Donation</option>
+          <option value="other">Other expenses</option>
+        </select>
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes" cols="3" rows="3"></textarea>
+        <div class="button-wrapper">
+          <button class="add">Add</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+
+</html>

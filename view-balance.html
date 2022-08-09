@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-height-width, initial-scale=1.0">
+
+  <title>View balance</title>
+
+  <link rel="stylesheet" href="view_balance.css">
+  <link rel="stylesheet" href="css/fontello.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <div class="logo">E-WALLET</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-menu">
+      <ul>
+        <li><a href="#">Main Menu</a></li>
+        <li><a href="#">Add income</a></li>
+        <li><a href="#">Add expense</a></li>
+        <li><a href="#">View balance</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </div>
+    <!--<div class="logout"> <a href="#">Logout</a></div> !-->
+  </nav>
+
+  <main>
+
+    <div class="select-period">
+      <label for="period">Select period</label>
+      <select name="period" id="period">
+        <option value="current">Current month</option>
+        <option value="previous">Previous month</option>
+        <option value="user-defined">Define period</option>
+      </select>
+    </div>
+
+    <div class="wrapper">
+
+      <div class="type">Incomes</div>
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Category</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Salary</td>
+            <td>88,110</td>
+          </tr>
+          <tr class="active-row">
+            <td>2</td>
+            <td>Bank Interest</td>
+            <td>72,400</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Other</td>
+            <td>52,300</td>
+          </tr>
+          <tr class = "last">
+            <td></td>
+            <td>Total:</td>
+            <td>225001</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="type">Expenses</div>
+
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Category</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Food</td>
+            <td>-10500</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Loan</td>
+            <td>-10000</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Fuel</td>
+            <td>-6000</td>
+          </tr>
+          <tr class = "last">
+            <td></td>
+            <td>Total:</span></td>
+            <td>-26000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <div class="summary">
+    Balance: <span class="minus">-200.20$</span>
+  </div>
+
+  <div class="charts">
+      Charts
+  </div>
+
+
+</body>
+
+
+</html>
