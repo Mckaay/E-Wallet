@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+
+body {
+  background-color: #edf6f9;
+  font-family: 'Poppins', sans-serif;
+  min-height: 390px;
+}
+
+.navbar-brand {
+  color: #009879 !important;
+  font-weight: 700 !important;
+  font-size: 1.7rem !important;
+  margin-right: 4rem !important;
+}
+
+.active {
+  color: #009879 !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #d0d0d3;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  margin-right: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+
+.content-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 1rem;
+}
+
+.content-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr:hover {
+  font-weight: bold;
+  color: #009879;
+}
+
+.type {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 2px solid #009879;
+}
+
+.minus{
+  color: red;
+}
+
+.summary {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #000;
+  width: 380px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.charts {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.last  {
+  font-weight: 700;
+}
