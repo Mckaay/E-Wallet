@@ -1,20 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  outline: none;
-  text-decoration: none;
+  font: inherit;
+}
+
+.main-section {
+  display: flex;
+  min-height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: font-family: 'Poppins', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background-color: #edf6f9!important;
+}
+
+main {
+  background-color: #edf6f9 ;
+}
+
+input {
+  text-align: center;
+}
+
+select {
+  text-align: center;
 }
 
 
-body {
-  background-color: #edf6f9;
-  font-family: 'Poppins', sans-serif;
-  min-height: 390px;
+.left-side-wrap{
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  border-radius: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #009879;
+  margin-bottom: 1.5rem;
 }
 
 .navbar-brand {
@@ -31,6 +61,85 @@ body {
   padding: 0.5rem 1rem;
   transition: all 0.4s linear;
   margin-right: 1rem;
+}
+
+.active:hover {
+  border-bottom: 2px solid #009879;
+}
+
+textarea {
+  resize: none !important;
+}
+
+
+.description {
+  font-weight: bold;
+  line-height: 1.2rem;
+}
+
+a {
+  color: #1877f2;
+}
+
+a:visited {
+  color: #1877f2;
+}
+
+form {
+  box-shadow: 0px 0px 10px 0px rgba(66, 68, 90, 0.87);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #009879 !important;
+  border: 0 !important;
+  font-weight: bold !important;
+  letter-spacing: 0.1rem;
+}
+
+.btn-primary:hover{
+  background-color: #0cab47 !important;
+  cursor: pointer;
+}
+
+.row-add {
+  background-color: #edf6f9 !important;
+}
+
+nav {
+  background-color: #f0f2f5 !important;
+}
+
+footer {
+  width: 60%;
+  margin: auto;
+}
+
+.navbar-brand {
+  color: #009879 !important;
+  font-weight: 700 !important;
+  font-size: 2rem !important;
+}
+
+.btn-main-menu {
+  font-size: 1.2rem !important;
+}
+
+.form-add {
+  box-shadow: none;
+}
+
+
+
+@media (max-width: 990px) {
+  .active {
+    margin-right: 0;
+  }
 }
 
 .wrapper {

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
 
-  <link rel="stylesheet" href="login.css">
-  <link rel="stylesheet" href="fontellocss/fontello.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/fontello.css">
 
   <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -19,53 +19,57 @@
 <body>
 
   <main>
-  <section class="container">
-      <div class="row text-center justify-content-center align-items-center">
-        <div class="col-12 col-md-6 ">
-          <div class="left-side-wrap">
-            <header>
-              <div class="logo">
-                <h1>E-WALLET</h1>
-              </div>
-              <h5>Simple way to manage personal finances.</h5>
-              <h5>Track your expenses and incomes.</h5>
-              <h5>View period time summaries.</h5>
-            </header>
+    <section class="main-section">
+      <div class="container">
+        <div class="row text-center justify-content-center align-items-center">
+          <div class="col-12 col-md-6 ">
+            <div class="left-side-wrap">
+              <header>
+                <div class="logo">
+                  <h1>E-WALLET</h1>
+                </div>
+                <h5>Simple way to manage personal finances.</h5>
+                <h5>Track your expenses and incomes.</h5>
+                <h5>View period time summaries.</h5>
+              </header>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="form">
+              <form action="main-menu.html" class="p-4 bg-white rounded" style="max-width: 70%;">
+                <div class="row text-center justify-content-center align-items-center">
+                  <div class="col-10 my-2">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                  </div>
+                  <div class="col-10 my-2">
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                  </div>
+                  <div class="col-10">
+                    <button type="submit" class="col-12 btn btn-primary btn-block my-2">Log In</button>
+                  </div>
+                  <div class="col-10 my-3">
+                    <button type="button" class="btn btn-link border-bottom"><a href="register.html">Forgot
+                        password?</a></button>
+                  </div>
+                  <p class="my-2">Don't have an account?</p>
+                  <div class="col-10">
+                    <a href="register.html"><button type="button" class="col-10 btn btn-primary">Create
+                        Account</button></a>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="form">
-            <form class="p-4 bg-white rounded" style="max-width: 70%;">
-              <div class="row text-center justify-content-center align-items-center">
-                <div class="col-10 my-2">
-                  <input type="email" class="form-control" id="email" placeholder="Enter email">
-                </div>
-                <div class="col-10 my-2">
-                  <input type="password" class="form-control" id="password" placeholder="Enter password">
-                </div>
-                <div class="col-10">
-                  <button type="button" class="col-12 btn btn-primary btn-block my-2">Log In</button>
-                </div>
-                <div class="col-10 my-3">
-                  <button type="button" class="btn btn-link border-bottom">Forgot password?</button>
-                </div>
-                <p class="my-2">Don't have an account?</p>
-                <div class="col-10">
-                  <button type="button" class="col-10 btn btn-primary">Create Account</button>
-                </div>
-          </div>
-        </form>
-        </div>
       </div>
-      </div>
-  </section>
-</main>
+    </section>
+  </main>
 
   <footer>
     <div class="row text-center m-0">
       <div class="col-12 col-md-3">
         <i class="icon-ok-circled2"></i>
-          <h6>Manage finances</h6>
+        <h6>Manage finances</h6>
       </div>
       <div class="col-12 col-md-3">
         <i class="icon-ok-circled2"></i>
@@ -73,11 +77,11 @@
       </div>
       <div class="col-12 col-md-3">
         <i class="icon-ok-circled2"></i>
-          <h6>Track expenses</h6>
+        <h6>Track expenses</h6>
       </div>
       <div class="col-12 col-md-3">
         <i class="icon-ok-circled2"></i>
-          <h6>Track incomes</h6>
+        <h6>Track incomes</h6>
       </div>
     </div>
   </footer>
