@@ -54,7 +54,7 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-ok-circled:before { content: '\e800'; } /* '' */
-.icon-ok-circled2:before { content: '\e801'; font-size: 26px; color:#009879 } /* '' */
+.icon-ok-circled:before { content: '\e800'; color: #009879; font-size: 25px; } /* '' */
+.icon-ok-circled2:before { content: '\e801'; color: #009879; font-size: 25px;} /* '' */
 .icon-doc-text:before { content: '\f0f6'; } /* '' */
 .icon-doc-text-inv:before { content: '\f15c'; } /* '' */
