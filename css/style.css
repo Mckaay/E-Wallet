@@ -18,15 +18,15 @@ body {
   font-family: font-family: 'Poppins', sans-serif !important;
   margin: 0;
   padding: 0;
-  background-color: #edf6f9!important;
+  background-color: #edf6f9 !important;
 }
 
 main {
-  background-color: #edf6f9 ;
+  background-color: #edf6f9;
 }
 
 input {
-  text-align: center;
+  text-align: left;
 }
 
 select {
@@ -34,7 +34,7 @@ select {
 }
 
 
-.left-side-wrap{
+.left-side-wrap {
   width: 100%;
   margin: auto;
 }
@@ -102,7 +102,7 @@ form {
   letter-spacing: 0.1rem;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: #0cab47 !important;
   cursor: pointer;
 }
@@ -134,7 +134,9 @@ footer {
   box-shadow: none;
 }
 
-
+span {
+  width: 0px;
+}
 
 @media (max-width: 990px) {
   .active {
@@ -150,6 +152,20 @@ footer {
   align-items: center;
   margin: auto;
   padding-bottom: 1rem;
+}
+
+.password-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#toggler {
+  position:relative;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 
@@ -200,7 +216,7 @@ footer {
   border-bottom: 2px solid #009879;
 }
 
-.minus{
+.minus {
   color: red;
 }
 
@@ -224,6 +240,6 @@ footer {
   margin-top: 1rem;
 }
 
-.last  {
+.last {
   font-weight: 700;
 }
