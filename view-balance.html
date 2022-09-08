@@ -48,15 +48,15 @@
 
   <div class="row justify-content-center align-items-center text-center border-bottom my-1">
     <div class="col-6 col-sm-6  col-md-2 my-2">
-      <label for="category" class = "my-2">Select Period</label>
-            <select class="form-select my-1" aria-label="Default select example" id="category">
-              <option value="current">Current Month</option>
-              <option value="previous">Previous Month</option>
-              <option value="transport">Define Period</option>
-            </select>
+      <label for="category" class="my-2">Select Period</label>
+      <select class="form-select my-1" aria-label="Default select example" id="category">
+        <option value="current">Current Month</option>
+        <option value="previous">Previous Month</option>
+        <option value="transport">Define Period</option>
+      </select>
     </div>
   </div>
-  
+
   <div class="wrapper">
 
     <div class="type">Incomes</div>
@@ -72,22 +72,22 @@
         <tr>
           <td>1</td>
           <td>Salary</td>
-          <td>88,110</td>
+          <td class="income-amount">88110</td>
         </tr>
         <tr class="active-row">
           <td>2</td>
           <td>Bank</td>
-          <td>72,400</td>
+          <td class="income-amount">72400</td>
         </tr>
         <tr>
           <td>3</td>
           <td>Other</td>
-          <td>52,300</td>
+          <td class="income-amount">52300</td>
         </tr>
-        <tr class = "last">
+        <tr class="last">
           <td></td>
           <td>Total:</td>
-          <td>225001</td>
+          <td class="income-total">225001</td>
         </tr>
       </tbody>
     </table>
@@ -106,41 +106,58 @@
         <tr>
           <td>1</td>
           <td>Food</td>
-          <td>-10500</td>
+          <td class = "expense-amount">-10500</td>
         </tr>
         <tr>
           <td>2</td>
           <td>Loan</td>
-          <td>-10000</td>
+          <td class = "expense-amount">-10000</td>
         </tr>
         <tr>
           <td>3</td>
           <td>Fuel</td>
-          <td>-6000</td>
+          <td class = "expense-amount">-6000</td>
         </tr>
-        <tr class = "last">
+        <tr class="last">
           <td></td>
           <td>Total:</span></td>
-          <td>-26000</td>
+          <td class="expense-total">-26000</td>
         </tr>
       </tbody>
     </table>
   </div>
-</main>
+  </main>
 
-<div class="summary">
-  Balance: <span class="minus">-200.20$</span>
-</div>
+  <div class="summary">
+    Balance: <span class="minus balance">-200.20$</span>
+  </div>
 
-<div class="charts">
+  <div class="charts">
     Charts
-</div>
+  </div>
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+
+
+  <script>
+  
+    const incomeTotalAmount = parseFloat(document.querySelector('.income-total').textContent);
+    const expenseTotalAmount = parseFloat(document.querySelector('.expense-total').textContent);
+
+    let balance = incomeTotalAmount + expenseTotalAmount;
+    const balanceDiv = document.querySelector('.balance');
+
+    if(balance >= 0 ){
+      balanceDiv.textContent = "+" +balance;
+    }
+    else {
+      balanceDiv.textContent = "-" +balance;
+    }
+  </script>
 </body>
 
 </html>
