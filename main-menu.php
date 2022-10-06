@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(isset($_SESSION['loggedIn']) == false){
+      header("Location: login.php");
+      exit();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +30,7 @@
       <a class="navbar-brand" href="main-menu.html">E-WALLET</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       </ul>
-       <a href="login.html"><button class="btn btn-outline-success" type="submit">Logout</button></a> 
+       <a href="logout.php"><button class="btn btn-outline-success" type="submit">Logout</button></a> 
     </div>
   </nav>
 
@@ -30,19 +39,19 @@
       <div class="row text-center justify-content-center align-items-center my-4">
         <h3 class = "py-2">Main Menu</h3>
         <div class="col-10 my-2">
-          <a href="add-income.html"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu" type="button">Add Income</button></a>
+          <a href="add-income.php"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu" type="button">Add Income</button></a>
         </div>
         <div class="col-10 my-2">
-          <a href="add-expense.html"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu" type="button">Add Expense</button></a>
+          <a href="add-expense.php"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu" type="button">Add Expense</button></a>
         </div>
         <div class="col-10 my-2">
-          <a href="view-balance.html"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu" type="button">View Balance</button></a>
+          <a href="view-balance-current.php"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu" type="button">View Balance</button></a>
         </div>
         <div class="col-10 my-2">
           <button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu" type="button">Settings</button>
         </div>
         <div class="col-10 my-2">
-          <a href="login.html"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu " type="button">Logout</button></a>
+          <a href="logout.php"><button class="col-8 col-md-4 btn btn-primary py-4 btn-main-menu " type="button">Logout</button></a>
         </div>
       </div>
     </div>

@@ -1,3 +1,15 @@
+<?php
+
+	session_start();
+	
+	if ((isset($_SESSION['loggedIn'])) && ($_SESSION['loggedIn']==true))
+	{
+		header("Location: main-menu.php");
+		exit();
+	}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +17,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register</title>
+  <title>Login</title>
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontello.css">
@@ -35,26 +47,35 @@
           </div>
           <div class="col-12 col-md-6">
             <div class="form">
-              <form action="main-menu.html" class="p-4 bg-white rounded" style="max-width: 70%;">
+              <form  action = "signIn.php"class="p-4 bg-white rounded" style="max-width: 70%;" method ="post">
                 <div class="row text-center justify-content-center align-items-center">
                   <div class="col-10 my-2">
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-                  </div>
-                  <div class="col-10 my-2">
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    <input type="text" class="form-control" id="login" placeholder="Enter login" name = "login" required>
                   </div>
                   <div class="col-10 my-2">
                     <div class="password-wrapper">
-                      <input type="password" class="form-control" id="password" placeholder="Enter password" required >
+                      <input type="password" class="form-control" id="password" name = "password" placeholder="Enter password" required >
                       <span><i id="toggler" class="icon-eye"></i>
                     </div>
                   </div>
                   <div class="col-10">
-                    <button type="submit" class="col-12 btn btn-primary btn-block my-2">Register</button>
+                    <button type="submit" name = "submit" class="col-12 btn btn-primary btn-block my-2">Log In</button>
+                    <?php
+                    if(isset($_SESSION['error']))
+                    {
+                      echo '<div style = "color: red; margin: 0.5rem;font-size: 0.9rem;">'.$_SESSION['error'].'</div>';
+                      unset($_SESSION['error']);
+                    }
+                    ?>
                   </div>
-                  <p class="my-4 border-bottom">Already have an account?</p>
+                  <div class="col-10 my-3">
+                    <button type="button" class="btn btn-link border-bottom"><a href="register.php">Forgot
+                        password?</a></button>
+                  </div>
+                  <p class="my-2">Don't have an account?</p>
                   <div class="col-10">
-                    <a href="login.html"><button type="button" class="col-10 btn btn-primary">Sign In</button></a>
+                    <a href="register.php"><button type="button" class="col-10 btn btn-primary">Create
+                        Account</button></a>
                   </div>
                 </div>
               </form>
@@ -97,7 +118,8 @@
     crossorigin="anonymous"></script>
 
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
