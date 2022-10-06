@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif !important;
   margin: 0;
   padding: 0;
   background-color: #edf6f9 !important;
@@ -26,13 +26,22 @@ main {
 }
 
 input {
-  text-align: left;
+  text-align: center;
 }
 
 select {
   text-align: center;
 }
 
+.error {
+  color:red;
+  margin: 0.7rem;
+}
+
+.success {
+  color: green;
+  margin: 0.5rem;
+}
 
 .left-side-wrap {
   width: 100%;
@@ -70,7 +79,6 @@ select {
 textarea {
   resize: none !important;
 }
-
 
 .description {
   font-weight: bold;
@@ -115,6 +123,7 @@ nav {
   background-color: #f0f2f5 !important;
 }
 
+
 footer {
   width: 60%;
   margin: auto;
@@ -138,6 +147,16 @@ span {
   width: 0px;
 }
 
+#myChartOne {
+  margin: auto !important;
+}
+
+.table-responsive {
+  max-height: 300px !important;
+}
+
+
+
 @media (max-width: 990px) {
   .active {
     margin-right: 0;
@@ -146,7 +165,7 @@ span {
 
 .wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 90%;
   justify-content: center;
   align-items: center;
@@ -173,11 +192,11 @@ span {
   border-collapse: collapse;
   font-size: 0.9em;
   width: 100%;
-  max-width: 800px;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  margin-top: 1rem;
+  margin-top: 1rem !important;
+  margin: auto;
 }
 
 .content-table thead tr {
