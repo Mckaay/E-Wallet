@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
   if (!ctype_alnum($notesWithoutSpace)) {
     if($notes == ''){}
     else{
-    $expenseValidationFlag = false;
+    $incomeValidationFlag = false;
     $_SESSION['incomeNotesError'] = "Special characters in notes are not allowed!";
     }
   }
