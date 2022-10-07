@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['loggedIn']) == false) {
-  header("Location: login.php");
+  header("Location: index.php");
   exit();
 }
 
@@ -112,6 +112,12 @@ if (isset($_POST['submit'])) {
           <div class="col-12 col-sm-10  col-md-7 my-2">
             <label for="amount">Amount</label>
             <input type="number" class="form-control" name = "amount" id="amount" placeholder="Enter amount" step ="0.01" min = "0.01" max = "4294967295" required>
+            <?php
+              if (isset($_SESSION['expenseAmountError'])) {
+                echo '<div style = "margin: auto; color: red;">' . $_SESSION['expenseAmountError'] . '</div';
+                unset($_SESSION['expenseAmountError']);
+              }
+              ?>
           </div>
           <div class="col-12 col-sm-10  col-md-7 my-2">
             <label for="date">Date</label>

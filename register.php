@@ -202,7 +202,7 @@
                   </div>
                   <p class="my-4 border-bottom">Already have an account?</p>
                   <div class="col-10">
-                    <a href="login.php"><button type="button" class="col-10 btn btn-primary">Sign In</button></a>
+                    <a href="index.php"><button type="button" class="col-10 btn btn-primary">Sign In</button></a>
                   </div>
                 </div>
               </form>

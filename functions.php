@@ -108,3 +108,5 @@ function getOperationRecords($sqlCommand,$operationType)
     echo 'Server error';
   }
 }
+
+?>

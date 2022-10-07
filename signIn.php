@@ -4,7 +4,7 @@
 
 
   if(!isset($_POST['submit'])){
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
   }
 
@@ -46,12 +46,12 @@
          }
          else {
             $_SESSION['error'] = "Wrong username or password!";
-            header('Location: login.php');
+            header('Location: index.php');
          }
       }
       else {
         $_SESSION['error'] = "Wrong username or password!";
-        header('Location: login.php');
+        header('Location: index.php');
       }
       $connection->close();
     }
@@ -62,6 +62,7 @@
     echo "Server error. Try again later!";
   }
 
+?>
 
 
 

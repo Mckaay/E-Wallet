@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['loggedIn']) == false) {
-  header("Location: login.php");
+  header("Location: index.php");
   exit();
 }
 
@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
     if($notes == ''){}
     else{
     $expenseValidationFlag = false;
-    $_SESSION['expenseNotesError'] = "Special characters in notes are not allowed!";
+    $_SESSION['incomeNotesError'] = "Special characters in notes are not allowed!";
     }
   }
   if ($amount < 0) {
@@ -134,9 +134,9 @@ if (isset($_POST['submit'])) {
               <label for="exampleFormControlTextarea1" class="form-label">Notes:</label>
               <textarea class="form-control" name="notes" id="exampleFormControlTextarea1" rows="3"></textarea>
               <?php
-              if (isset($_SESSION['notesError'])) {
-                echo '<div style = "margin: auto; color: red;">' . $_SESSION['notesError'] . '</div';
-                unset($_SESSION['notesError']);
+              if (isset($_SESSION['incomeNotesError'])) {
+                echo '<div style = "margin: auto; color: red;">' . $_SESSION['incomeNotesError'] . '</div';
+                unset($_SESSION['incomeNotesError']);
               }
               ?>
             </div>
